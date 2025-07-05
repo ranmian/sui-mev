@@ -60,11 +60,11 @@ struct CollectorConfig {
 #[derive(Clone, Debug, Parser)]
 struct DbSimConfig {
     /// needed for db simulator
-    #[arg(long, env = "SUI_DB_PATH", default_value = "/home/ubuntu/sui/db/live/store")]
+    #[arg(long, env = "SUI_DB_PATH", default_value = "/root/opt/sui/db/live/store")]
     pub db_path: String,
 
     /// needed for db simulator
-    #[arg(long, env = "SUI_CONFIG_PATH", default_value = "/home/ubuntu/sui/fullnode.yaml")]
+    #[arg(long, env = "SUI_CONFIG_PATH", default_value = "/root/opt/sui/config/fullnode.yaml")]
     pub config_path: String,
 
     /// db simulator listens to this socket
@@ -76,7 +76,7 @@ struct DbSimConfig {
     #[arg(
         long,
         env = "SUI_PRELOAD_PATH",
-        default_value = "/home/ubuntu/suiflow-relay/pool_related_ids.txt"
+        default_value = "/root/opt/work/sui-mev/pool_related_ids.txt"
     )]
     pub preload_path: String,
 
