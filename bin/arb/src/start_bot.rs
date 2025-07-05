@@ -64,7 +64,7 @@ struct DbSimConfig {
     pub db_path: String,
 
     /// needed for db simulator
-    #[arg(long, env = "SUI_CONFIG_PATH", default_value = "/root/opt/sui/config/fullnode.yaml")]
+    #[arg(long, env = "SUI_CONFIG_PATH", default_value = "/root/opt/work/sui-mev/fullnode.yaml")]
     pub config_path: String,
 
     /// db simulator listens to this socket

@@ -354,7 +354,7 @@ mod tests {
         let start = Instant::now();
         let db_sim = DBSimulator::new_slow(
             "/root/opt/sui/db/live/store",
-            "/root/opt/sui/config/fullnode.yaml",
+            "/root/opt/work/sui-mev/fullnode.yaml",
             None,
             None,
         )
