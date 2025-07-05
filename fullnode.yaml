@@ -31,14 +31,6 @@ checkpoint-executor-config:
   local-execution-timeout-sec: 30
   data-ingestion-dir: "/root/opt/sui/checkpoints"
 
-state-archive-read-config:
-  - ingestion-url: "https://checkpoints.mainnet.sui.io"
-    concurrency: 5
-
-state-archive-write-config:
-  concurrency: 0
-  use-for-pruning-watermark: false
-
 p2p-config:
   seed-peers:
     - address: /dns/mel-00.mainnet.sui.io/udp/8084
